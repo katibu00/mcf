@@ -4,7 +4,7 @@
         <div class="row align-items-center">
           <div class="col-xl-4 col-md-6">
             <div class="footer-logo-one">
-              <a href="index.html"><img alt="logo" src="/frontend/img/logo-w.png"></a>
+              <a href="{{ route('homepage') }}"><img alt="logo" width="90px" src="/frontend/logo.jpeg"></a>
             </div>
           </div>
           <div class="col-xl-3 col-md-6">
@@ -30,24 +30,21 @@
           <div class="row">
           <div class="col-xl-4 col-md-6">
             <div class="widget-title">
-              <h3 class="m-0">Information</h3>
-              <p class="pt-4">Lorem ipsum, or lipsum as it is some
-                  times  known, is dummy text used in 
-                  laying out pri nt, graphic or web lirm
-                  Lorem ipsum, or lip designs.</p>
+              <h3 class="m-0">Who we Are</h3>
+              <p class="pt-4">Mujaddadi Care Foundation is a beacon of hope in Bauchi State, Nigeria. Committed to social impact and education, we strive to empower communities and build a brighter future for all.</p>
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
             <div class="widget-title">
               <h3 class="m-0">Quick Links</h3>
               <ul class="pt-4">
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Our Founder</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Multimedia</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Education</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Governance</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Entrepreneurship</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Privacy Policy</a></li>
-                <li class="pb-0"><i class="fa-solid fa-angle-right"></i><a href="#">Chil Education</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">About Us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="{{ route('projects.all') }}">Our Works</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Contact Us</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="{{ route('blogs.all') }}">News</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="#">Get Involved</a></li>
+                {{-- <li><i class="fa-solid fa-angle-right"></i><a href="#">Privacy Policy</a></li> --}}
+                {{-- <li class="pb-0"><i class="fa-solid fa-angle-right"></i><a href="#">Chil Education</a></li> --}}
               </ul>
             </div>
           </div>
@@ -59,7 +56,7 @@
               <i>
                 <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g id="pin"><path d="m12 22c-.3632813 0-.6972656-.1967773-.8740234-.5141602l-2.3066406-4.1518555c-2.897461-1.2597655-4.819336-4.1606445-4.819336-7.3339843 0-4.4111328 3.5888672-8 8-8s8 3.5888672 8 8c0 3.1733398-1.921875 6.0742188-4.8193359 7.3339844l-2.3066406 4.1518555c-.1767579.3173828-.5107422.5141601-.8740235.5141601zm0-18c-3.3085938 0-6 2.6914063-6 6 0 2.4736328 1.5576172 4.7265625 3.8769531 5.605957.2207031.0839844.4052734.2431641.5195313.4492188l1.6035156 2.8857422 1.6035156-2.8857422c.1142578-.2060547.2988281-.3652344.5195313-.4492188 2.3193359-.8793945 3.8769531-3.1323242 3.8769531-5.605957 0-3.3085937-2.6914062-6-6-6zm0 9c-1.6542969 0-3-1.3457031-3-3s1.3457031-3 3-3 3 1.3457031 3 3-1.3457031 3-3 3zm0-4c-.5517578 0-1 .4487305-1 1s.4482422 1 1 1 1-.4487305 1-1-.4482422-1-1-1z"/></g></svg>
               </i>
-              <h5>1199 N. Fairfax St. Suite 300 Alexandria, VA 22314</h5>
+              <h5>Behind MRS filling station, along Jos road, Bauchi, Bauchi State</h5>
             </div>
             <div class="contact-info mt-3">
               <i>
@@ -77,13 +74,13 @@
                       C494.3,365.039,512.01,311.895,512,255.954C511.988,187.393,485.406,123.064,437.15,74.817z"/>
                 </svg>
               </i>
-              <h5>Phone:</h5><a href="callto:800-836-4620">800-836-4620</a>
+              <h5>Phone:</h5><a href="callto:800-836-4620">081 6468 1678, 0703 664 9036, 0706 623 5742</a>
             </div>
             <div class="contact-info mt-3">
               <i>
                 <svg height="512" viewBox="0 0 32 32" width="512" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 34"><path d="m30 9v14a3 3 0 0 1 -3 3h-22a3 3 0 0 1 -3-3v-14a2.87 2.87 0 0 1 .19-1l12.15 8.1a3 3 0 0 0 3.32 0l12.15-8.1a2.87 2.87 0 0 1 .19 1zm-13.45 5.43 12-8a3 3 0 0 0 -1.55-.43h-22a3 3 0 0 0 -1.54.44l12 8a1 1 0 0 0 1.09-.01z"/></g></svg>
               </i>
-              <h5>Email:</h5><a href="mailto:information@domain.com">information@domain.com</a>
+              <h5>Email:</h5><a href="mailto:info@mujaddadifoundation.com">info@mujaddadifoundation.com</a>
             </div>
             </div>
           </div>
@@ -112,10 +109,10 @@
           </form>
         </div>
         <div class="wpo-lower-footer">
-           <p>© 2023 Charity PSD  <i class="fa-solid fa-heart px-2"></i><a href="#"> By Winsfolio</a>, All rights reserved</p>
-           <div class="d-flex align-items-center"><a href="#"> Terms of Use</a><div class="mx-4 boder"></div><a href="#">Privacy Policy</a> 
+           <p>© 2023 Mujaddadi Care Foundation  <i class="fa-solid fa-heart px-2"></i><a href="#"> By TechFushion Labs</a>, All rights reserved</p>
+           {{-- <div class="d-flex align-items-center"><a href="#"> Terms of Use</a><div class="mx-4 boder"></div><a href="#">Privacy Policy</a> 
            <div class="mx-4 boder"></div> <a href="#">       Disclaimer</a>
-          </div>
+          </div> --}}
       </div>
     </div>
     </div>

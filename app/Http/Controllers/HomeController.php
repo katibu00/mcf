@@ -27,7 +27,7 @@ class HomeController extends Controller
 
     public function guest()
     {
-        $data['blogs'] = Blog::orderBy('created_at', 'desc')->take(3)->get();;
+        $data['blogs'] = Blog::orderBy('created_at', 'desc')->take(2)->get();;
 
         $data['projects'] = Project::where('featured', true)->orderBy('created_at', 'desc')->take(3)->get();
         $data['events'] = Event::where('featured', true)->orderBy('created_at', 'desc')->take(4)->get();

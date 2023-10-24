@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-@section('pageTitle', 'Blogs')
+@section('pageTitle', 'Home')
 @section('content')
 
 <section class="slider-home-1 owl-carousel owl-theme">
@@ -329,7 +329,7 @@
 <section class="gap">
   <div class="container">
     <div class="heading">
-      <img alt="icon" src="/frontend/img/logo-icon.png">
+      <img alt="icon" width="35px" src="/frontend/logo.jpeg">
       <p>working on Bauchi People</p>
       <h2>Upcoming Events</h2>
     </div>
@@ -363,21 +363,20 @@
 <section class="gap no-top">
   <div class="container">
     <div class="heading">
-      <img alt="icon" src="/frontend/img/logo-icon.png">
+      <img alt="icon" width="35px" src="/frontend/logo.jpeg">
       <p>working on charity</p>
-      <h2>Recent Articles</h2>
+      <h2>Recent News</h2>
     </div>
     <div class="row">
       <div class="offset-xl-1 col-xl-10">
         <div class="article">
-          <img alt="article-img" src="https://via.placeholder.com/520x370">
+          <img alt="article-img" src="{{ $blogs[0]->featured_image }}" width="520" height="370">
           <div class="article-data">
-            <h4>24<span>Mar, 2023</span></h4>
+            <h4>{{ $blogs[0]->created_at->format('d') }}<span>{{ $blogs[0]->created_at->format('M') }}, {{ $blogs[0]->created_at->format('Y') }}</span></h4>
             <div>
-              <h5>By NicDark   <span class="px-3">-</span>    1 Comments</h5>
-              <a href="blog-details-1.html"><h3>The perfect way to end your campaign</h3></a>
-              <h6>Duis sed odio sit amet nibh vulputa te rsus a amet mau accumsan ip suy veliu
-                  am nec tel</h6>
+              <h5>By Admin   <span class="px-3">-</span>    0 Comments</h5>
+              <a href="{{ route('blogs.show', ['slug' => $blogs[0]->slug]) }}"><h3>{{ $blogs[0]->title }}</h3></a>
+              <h6>{!! Illuminate\Support\Str::limit($blogs[0]->body, 100, '....') !!}</h6>
             </div>
           </div>
         </div>
@@ -385,15 +384,14 @@
       <div class="offset-xl-1 col-xl-10 mt-5">
         <div class="article two">
           <div class="article-data">
-            <h4>24<span>Mar, 2023</span></h4>
+            <h4>{{ $blogs[1]->created_at->format('d') }}<span>{{  $blogs[1]->created_at->format('M')  }}, {{ $blogs[1]->created_at->format('Y') }}</span></h4>
             <div>
-              <h5>By NicDark   <span class="px-3">-</span>    1 Comments</h5>
-              <a href="blog-details-1.html"><h3>The perfect way to end your campaign</h3></a>
-              <h6>Duis sed odio sit amet nibh vulputa te rsus a amet mau accumsan ip suy veliu
-                  am nec tel</h6>
+              <h5>By Admin   <span class="px-3">-</span>    0 Comments</h5>
+              <a href="{{ route('blogs.show', ['slug' => $blogs[1]->slug]) }}"><h3>{{ $blogs[1]->title }}</h3></a>
+              <h6>{!! Illuminate\Support\Str::limit($blogs[1]->body, 100, '....') !!}</h6>
             </div>
           </div>
-          <img alt="article-img" src="https://via.placeholder.com/520x370">
+          <img alt="article-img" src="{{ $blogs[1]->featured_image }}" width="520" height="370">
         </div>
         <div class="button-gap">
           <a href="#" class="btn mt-5"><span>New All Posts</span></a>

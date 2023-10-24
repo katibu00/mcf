@@ -54,7 +54,7 @@
                         <div class="mx-4 boder"></div>
                         <div class="login">
                             <i class="fa-solid fa-user"></i>
-                            <a href="#">Admin side</a>
+                            <a href="{{ route('system-admin') }}">Admin side</a>
                         </div>
                     </div>
                 </div>
@@ -77,11 +77,11 @@
                         <div class="nav-bar">
                             <nav>
                                 <ul>
-                                    <li><a href="">Home</a></li>
+                                    <li><a href="{{ route('homepage') }}">Home</a></li>
                                     <li><a href="">About Us</a></li>
-                                    <li><a href="">Our Work</a></li>
+                                    <li><a href="{{ route('projects.all') }}">Our Work</a></li>
                                     <li><a href="">Get Involved</a></li>
-                                    <li><a href="">News</a></li>
+                                    <li><a href="{{ route('blogs.all') }}">News</a></li>
                                     <li><a href="">Contact Us</a></li>
                                     <li><a href="">Donate</a></li>
                                 </ul>
@@ -112,17 +112,17 @@
 
     <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
         <div class="res-log">
-            <a href="index.html">
+            <a href="{{ route('homepage') }}">
                 <img src="/frontend/logo.jpeg" alt="Responsive Logo" width="70px" height="80px" class="white-logo">
                 <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="black-logo">
             </a>
         </div>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="{{ route('homepage') }}">Home</a></li>
             <li><a href="">About Us</a></li>
-            <li><a href="">Our Work</a></li>
+            <li><a href="{{ route('projects.all') }}">Our Work</a></li>
             <li><a href="">Get Involved</a></li>
-            <li><a href="">News</a></li>
+            <li><a href="{{ route('blogs.all') }}">News</a></li>
             <li><a href="">Contact Us</a></li>
             <li><a href="">Donate</a></li>
         </ul>
