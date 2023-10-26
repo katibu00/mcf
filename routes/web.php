@@ -23,7 +23,7 @@ Route::get('/', [HomeController::class, 'guest'])->name('homepage');
 
 
 // Route::get('/', [HomeController::class, 'guest'])->name('home');
-Route::get('/about-us', [PagesController::class, 'about'])->name('about');
+Route::get('/who-we-are', [PagesController::class, 'about'])->name('about');
 Route::get('/contact-us', [PagesController::class, 'contact'])->name('contact');
 
 Route::get('/home', function(){

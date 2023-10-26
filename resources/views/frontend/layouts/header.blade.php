@@ -78,12 +78,17 @@
                             <nav>
                                 <ul>
                                     <li><a href="{{ route('homepage') }}">Home</a></li>
-                                    <li><a href="">About Us</a></li>
+                                    <li><a href="JavaScript:void(0)">About Us</a>
+                                        <ul>
+                                            <li><a href="{{ route('about') }}">Who We Are</a></li>
+                                            <li><a href="#">Our Founder</a></li>
+                                        </ul>        
+                                        </li>
                                     <li><a href="{{ route('projects.all') }}">Our Work</a></li>
                                     <li><a href="">Get Involved</a></li>
                                     <li><a href="{{ route('blogs.all') }}">News</a></li>
-                                    <li><a href="">Contact Us</a></li>
-                                    <li><a href="">Donate</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                    {{-- <li><a href="">Donate</a></li> --}}
                                 </ul>
                             </nav>
                             <div class="extras">
@@ -119,12 +124,17 @@
         </div>
         <ul>
             <li><a href="{{ route('homepage') }}">Home</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="JavaScript:void(0)">About Us</a>
+                <ul>
+                    <li><a href="{{ route('about') }}">Who We Are</a></li>
+                    <li><a href="#">Our Founder</a></li>
+                </ul>        
+                </li>
             <li><a href="{{ route('projects.all') }}">Our Work</a></li>
             <li><a href="">Get Involved</a></li>
             <li><a href="{{ route('blogs.all') }}">News</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Donate</a></li>
+            <li><a href="{{ route('contact') }}">Contact Us</a></li>
+            {{-- <li><a href="">Donate</a></li> --}}
         </ul>
 
         <a href="JavaScript:void(0)" id="res-cross"></a>

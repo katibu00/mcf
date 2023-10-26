@@ -1,139 +1,182 @@
 @extends('frontend.layouts.app')
 @section('pageTitle','About Us')
 @section('content')
-
-    <!-- page banner start -->
-    <div class="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
-        style="background-image: url(/frontend/img/background/page-banner.jpg);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="breadcrumb-inner text-center">
-                        <h2 class="page-title">About Us</h2>
-                        <ul class="page-list">
-                            <li><a href="{{ route('homepage') }}">Home</a></li>
-                            <li>About</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="page-title-area" style="background-image:url('/frontend/banner1.jpeg')">
+    <div class="container">
+      <div class="title-area-data">
+        <h2>Who we are</h2>
+      </div>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{{ route('homepage') }}">Home</a>
+        </li>
+          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          <li class="breadcrumb-item active" aria-current="page">Who We Are</li>
+      </ol>
     </div>
-    <!-- page banner end -->
+  </section>
 
-
-    <!-- Client Logo area start -->
-    {{-- <div class="client-logo-area py-75"
-        style="background-image: url(/frontend/img/client-logo/client-logo-section-bg.jpg);">
-        <div class="container">
-            <div class="client-logo-wrap">
-                <div class="client-logo-item">
-                    <a href="#"><img src="/frontend/img/client-logo/client-logo1.png" alt="Client Logo"></a>
-                </div>
-                <div class="client-logo-item">
-                    <a href="#"><img src="/frontend/img/client-logo/client-logo2.png" alt="Client Logo"></a>
-                </div>
-                <div class="client-logo-item">
-                    <a href="#"><img src="/frontend/img/client-logo/client-logo3.png" alt="Client Logo"></a>
-                </div>
-                <div class="client-logo-item">
-                    <a href="#"><img src="/frontend/img/client-logo/client-logo4.png" alt="Client Logo"></a>
-                </div>
-                <div class="client-logo-item">
-                    <a href="#"><img src="/frontend/img/client-logo/client-logo5.png" alt="Client Logo"></a>
-                </div>
+<section class="gap">
+  <div class="container">
+    <div class="event-details hoverimg">
+      <figure>
+        <img alt="img" src="/frontend/banner3.jpeg" height="590" width="1290">
+      </figure>
+      <div class="event-details-text p-100">
+       
+        <h2>Mujaddadi Care Foundation: Transforming Lives and Communities</h2>
+        <div class="row pt-4 pb-4 align-items-center">
+   
+          <div class="col-lg-6">
+            <div class="organizer">
+             <img alt="man" src="/garkuwa.jpeg" width="90" height="90">
+              <div>
+                <h4>Amb. Faruk Mailambu Waziri</h4>
+                <h6>Convener</h6>
+              </div>
             </div>
-        </div>
-    </div> --}}
-    <!-- Client Logo area end -->
-
-
-    <!-- About area start -->
-    <div class="about-area py-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-image-part">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="image">
-                                    <img src="/frontend/image1.jpeg" alt="About">
-                                </div>
-                                <div class="project-complete mb-30">
-                                    <div class="project-complete__icon">
-                                        <i class="flaticon-charity"></i>
-                                    </div>
-                                    <div class="project-complete__content">
-                                        <h5>We Complate 10+ Project</h5>
-                                        <span>Done for charity</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="image mt-65 rmt-15 rel">
-                                    <img src="/frontend/image2.jpeg" alt="About">
-                                    <div class="experiences-years">
-                                        <span class="experiences-years__number">5</span>
-                                        <span class="experiences-years__text">Years Experiences</span>
-                                    </div>
-                                </div>
-                                <div class="image">
-                                    <img src="/frontend/image3.jpeg" alt="About">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content-part rmt-65">
-                        <div class="section-title">
-                            <span class="section-title__subtitle mb-10">About us</span>
-                            {{-- <h2>Empowering Northern Nigeria Through <span>Sustainable Initiatives</span></h2> --}}
-                        </div>
-                        <p>El-Habeeb, meaning “the beloved”, is a community-centric foundation that take its root name from enhancing community well-being through comprehensive WASH (Water, Sanitation & Hygiene) programs. Local communities and its “beloved” people are very dear to us, human dignity is paramount and we share in the extreme pains and challenges they face to access WASH as basic necessities. </p>
-                        <p>Water, Sanitation, and Hygiene (WASH) are fundamental elements for human well-being and sustainable development. Access to clean water, improved sanitation facilities, and proper hygiene practices are essential for health, dignity, and economic prosperity. All our WASH programs are comprehensive and are aimed at improving the quality of life for communities in need.</p>
-                        <div class="section-title">
-                            <span class="section-title__subtitle mb-10">Our Vision</span>
-                        </div>
-                        <p>To create a world where every individual, regardless of their socio-economic background, has equitable access to clean water, improved sanitation, and proper hygiene, ensuring a healthier and more prosperous future for all.</p>
-                        <div class="section-title">
-                            <span class="section-title__subtitle mb-10">Our Mission</span>
-                        </div>
-                        <p>E-Habib Foundation is dedicated to addressing Water, Sanitation, and Hygiene (WASH) issues by implementing sustainable and community-centric solutions. Our mission is to: create positive changes in a community's access to safe water, sanitation, and hygiene practices, ultimately leading to improved health, well-being, and quality of life for all.</p>
-                        <p>The primary objectives are to ensure access to clean and safe drinking water for our need-based target communities, improve sanitation facilities and hygiene practices to reduce the risk of waterborne diseases in these communities. To also promote community engagement and capacity-building for sustainable WASH management and enhance awareness and behavioral changes related to hygiene and sanitation practices.
-                        </p>
-                        <p>In collaborations with government agencies, non-governmental organizations (NGOs), donors, and local communities, we will go through successful implementation of our programming. Our partnerships will ensure access to resources, expertise, and a holistic approach to WASH.
-                        </p>
-                        <p>All our programs mainly target and focus on vulnerable and underserved communities, including rural areas, informal settlements, and schools, where WASH facilities are lacking or inadequate.
-                        </p>
-
-                       
-                        <a class="btn ml-5 mt-25" href="{{ route('projects.all') }}">See Projects</a>
-                    </div>
-                </div>
-
-
-
-                <div class="section-title">
-                    <span class="section-title__subtitle mb-10">Our Key Programming</span>
-                </div>
-               <ul>
-                <li>1. Water Supply: Drilling and maintenance of water wells. Installation of water purification systems. Establishment of water distribution points.
-                </li>
-                <li>2. Sanitation: Construction of improved latrines and toilets. Implementation of wastewater management solutions. Promotion of safe waste disposal practices.
-                </li>
-                <li>3. Hygiene Promotion: Hygiene education and awareness campaigns. Distribution of hygiene kits. Training of community health workers.
-                </li>
-                <li>4. Community Engagement: Formation of WASH committees for local management. Capacity-building workshops for sustainable operation and maintenance. Inclusion of women and marginalized groups in decision-making.
-                </li>
-                <li>5. Monitoring and Evaluation: Regular assessments of WASH infrastructure and practices. Feedback mechanisms for continuous improvement. Impact assessments to measure the program's effectiveness.
-                </li>
-                <li>6. Sustainability: Integration of WASH activities into local development plans. Collaboration with government agencies, NGOs, and other stakeholders. Promotion of income-generating activities related to WASH.
-                </li>
-               </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="organizer">
+             <img alt="man" src="/gidado.jpeg" width="90" height="90">
+              <div>
+                <h4>Gidado Ishaq Muhammad</h4>
+                <h6>Program Manager</h6>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-12">
+            <p class="pt-4 pb-4">In the heart of our community, where the noble ideals of reform and compassionate care converge, the "Mujaddadi Care Foundation" emerges as a transformative force. This foundation draws its inspiration from Senator Shehu Buba, a name synonymous with reform and progress, whose unwavering commitment has illuminated our community's path towards a brighter future. With a resolute focus on healthcare and education, Senator Buba's journey from humble beginnings to an advocate for change reflects the core values of compassion and integrity.<br><br>
+
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="event-img-two ">
+              <figure>
+                <img alt="img" src="/frontend/senator2.jpeg" width="440" height="460">
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-7 ps-sm-5">
+            <h5>Pioneering Healthcare Reform</h5>
+            <p class="pb-4">Healthcare has been a pivotal focal point in Senator Buba's endeavors. He recognized the challenges faced by many in accessing quality medical care and, with unwavering determination, worked tirelessly to bridge these gaps. His advocacy for improved health facilities, equitable distribution of medical supplies, and health awareness campaigns have made a profound impact on countless lives. Through his actions, the silent humanitarian has sown seeds of hope and healing.
+
+            </p>
+            {{-- <ul class="team-list">
+            <li><i class="fa-regular fa-circle-check"></i>Watch the Bathroom Sessions</li>
+            <li><i class="fa-regular fa-circle-check"></i>Find everything you need to get fundraising from the comfort </li>
+            <li><i class="fa-regular fa-circle-check"></i>Order a personalised present</li>
+            <li><i class="fa-regular fa-circle-check"></i>What have you given today.</li>
+            </ul> --}}
+          </div>
         </div>
+        <div class="youtube-video mt-5 mb-5 hoverimg">
+            <a data-fancybox="" href="https://www.youtube.com/watch?v=1La4QzGeaaQ"><i>
+              <svg enable-background="new 0 0 437.499 437.499" height="512" viewBox="0 0 437.499 437.499" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m46.875 437.498c-2.67 0-5.341-.687-7.751-2.06-4.868-2.777-7.874-7.95-7.874-13.566v-406.27c0-5.616 3.006-10.789 7.874-13.566 4.913-2.762 10.88-2.701 15.701.107l343.749 203.136c4.761 2.823 7.675 7.935 7.675 13.459s-2.914 10.636-7.675 13.459l-343.749 203.135c-2.457 1.435-5.204 2.167-7.95 2.166zm15.625-394.521v351.521l297.409-175.76z"></path></svg>
+            </i></a>
+            <figure>
+              <img alt="img" src="/frontend/banner4.jpeg">
+            </figure>
+        </div>
+        <h4>Empowering Minds through Education</h4>
+        <p>In tandem with his dedication to healthcare, Senator Buba also recognizes the transformative power of education in shaping the future. With a vision to empower the next generation, he has championed various educational initiatives. From supporting scholarships to fostering vocational training programs, his commitment to educational reform is nothing short of inspiring. Every step he takes is a testament to his belief that education is the cornerstone of progress.</p>
+        <div class="obviously">
+          <h3>Reform is not a destination; it's a continuous journey toward a better tomorrow." - Senator Shehu Buba</h3>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 hoverimg">
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/senator.jpeg" width="349" height="251">
+              </figure>
+            </div>
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/image1.jpeg" width="349" height="251">
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/image2.jpeg" width="349" height="251">
+              </figure>
+            </div>
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/image3.jpeg" width="349" height="365">
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/image4.jpeg" width="349" height="251">
+              </figure>
+            </div>
+            <div class="event-details-img">
+              <figure>
+                <img alt="img" class="w-100" src="/frontend/image5.jpeg" width="349" height="365">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <h5>Purpose, Vision, and Mission of the Mujaddadi Care Foundation</h5>
+
+        <h6>Purpose:</h6>
+        
+        <p> Mujaddadi Care Foundation embarks on a purpose-driven mission to uplift and empower our community in the domains of healthcare and education. Guided by the indomitable spirit of Senator Shehu Buba, our purpose transcends boundaries to touch the lives of the vulnerable and bring positive change to the forefront.</p>
+        
+        Vision:
+        
+      <p> Our vision is crystal clear - to create a society where every individual has access to quality healthcare and equitable education opportunities. We envision a future where the well-being of the community flourishes, nurtured by compassion, innovation, and reform.</p>
+        
+      <h6>Mission:</h6>
+        
+      <p>With the legacy of Senator Shehu Buba as our compass, our mission unfolds in threefold:
+        
+        Reforming Healthcare: We aim to bridge the healthcare divide by introducing modern technology, offering medical services to the underserved, and spreading awareness about preventive care. The foundation is committed to transforming healthcare, making it accessible to all, regardless of social or economic status.
+        
+        Empowering Education: We believe that education is the cornerstone of progress. Through scholarships, vocational training, and technology-driven learning platforms, we empower minds to dream, aspire, and achieve their fullest potential. Our mission is to unlock the doors of education for every eager soul.
+        
+        Compassionate Care: At the heart of our foundation lies the spirit of compassion. We reach out to the communities, engage in sensitization campaigns, and extend a caring hand to those in need. Our initiatives are not just programs; they are a testament to the empathy that fuels our endeavors.</p>
+      <h4 class="pt-4"> Embodying the Essence of Senator Buba's Vision</h4>
+        <p>
+          Embodying the essence of Senator Buba's vision, the Mujaddadi Care Foundation stands resolute, channeling our collective energy towards the betterment of the community we cherish. Each endeavor is an embodiment of our commitment to care, upliftment, and progress.
+        </p>
+        <div class="share-post-icon mt-5">
+          <h6>Share Post:</h6>
+          <ul class="social-media-icon full">
+              <li>
+                  <a href="#" id="facebook-share">
+                      <i class="fab fa-facebook-f icon"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" id="twitter-share">
+                      <i class="fab fa-twitter icon"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" id="google-share">
+                      <i class="fab fa-google-plus-g icon"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+      <script>
+          // Get the current page URL
+          const currentURL = window.location.href;
+      
+          // Update the href attributes with the current URL
+          document.getElementById('facebook-share').href = `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`;
+          document.getElementById('twitter-share').href = `https://twitter.com/intent/tweet?url=${currentURL}`;
+          document.getElementById('google-share').href = `https://plus.google.com/share?url=${currentURL}`;
+      </script>
+      
     </div>
-    <!-- About area end -->
+  </div>
+</section>
 
 @endsection
