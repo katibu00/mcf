@@ -81,7 +81,7 @@
                                     <li><a href="JavaScript:void(0)">About Us</a>
                                         <ul>
                                             <li><a href="{{ route('about') }}">Who We Are</a></li>
-                                            <li><a href="#">Our Founder</a></li>
+                                            <li><a href="{{ route('founder') }}">Our Founder</a></li>
                                         </ul>        
                                         </li>
                                     <li><a href="{{ route('projects.all') }}">Our Work</a></li>
@@ -104,7 +104,7 @@
     <div class="responsive-bar">
         <div class="container">
             <div class="responsive-bar-slider">
-                <a href="index.html">
+                <a href="{{ route('homepage') }}">
                     <img alt="logo" src="/frontend/logo.jpeg" width="50px" height="50px" class="white-logo">
                     <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="black-logo">
                 </a>

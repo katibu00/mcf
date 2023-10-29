@@ -8,10 +8,14 @@ class PagesController extends Controller
 {
     public function about()
     {
-        return view('front.pages.about');
+        return view('frontend.pages.about');
     }
     public function contact()
     {
-        return view('front.pages.contact');
+        return view('frontend.pages.contact');
+    }
+    public function founder()
+    {
+        return view('frontend.pages.founder');
     }
 }

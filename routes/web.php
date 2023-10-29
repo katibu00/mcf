@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,7 @@ Route::get('/', [HomeController::class, 'guest'])->name('homepage');
 // Route::get('/', [HomeController::class, 'guest'])->name('home');
 Route::get('/who-we-are', [PagesController::class, 'about'])->name('about');
 Route::get('/contact-us', [PagesController::class, 'contact'])->name('contact');
+Route::get('/our-founder', [PagesController::class, 'founder'])->name('founder');
 
 Route::get('/home', function(){
    
@@ -111,13 +113,3 @@ Route::get('projects/{slug}', [ProjectsController::class, 'show'])->name('projec
 Route::get('/projects', [ProjectsController::class, 'allProjects'])->name('projects.all');
 
 Route::get('/events/{slug}',  [EventsController::class, 'show'])->name('events.show');
-
-//////////////////
-
-Route::get('/about-us', function(){
-    return view("frontend.pages.about");
-})->name('about');
-Route::get('/contact-us', function(){
-    return view("frontend.pages.contact");
-})->name('contact');
-

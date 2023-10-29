@@ -42,7 +42,8 @@
                 <li><i class="fa-solid fa-angle-right"></i><a href="{{ route('projects.all') }}">Our Works</a></li>
                 <li><i class="fa-solid fa-angle-right"></i><a href="#">Contact Us</a></li>
                 <li><i class="fa-solid fa-angle-right"></i><a href="{{ route('blogs.all') }}">News</a></li>
-                <li><i class="fa-solid fa-angle-right"></i><a href="#">Get Involved</a></li>
+                {{-- <li><i class="fa-solid fa-angle-right"></i><a href="#">Get Involved</a></li> --}}
+                <li><i class="fa-solid fa-angle-right"></i><a href="{{ route('founder') }}">About Senator Shehu Buba</a></li>
                 {{-- <li><i class="fa-solid fa-angle-right"></i><a href="#">Privacy Policy</a></li> --}}
                 {{-- <li class="pb-0"><i class="fa-solid fa-angle-right"></i><a href="#">Chil Education</a></li> --}}
               </ul>
