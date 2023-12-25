@@ -21,7 +21,7 @@
                         C494.3,365.039,512.01,311.895,512,255.954C511.988,187.393,485.406,123.064,437.15,74.817z" />
                                 </svg>
                             </i>
-                            <span>Phone: </span><a class="me-3" href="callto:08164681678">&nbsp;081 6468 1678</a>
+                            <span>Phone: </span><a class="me-3" href="callto:08164681678">&nbsp;{{ $settings->phone_number }}</a>
                         </div>
                         <div class="phone">
                             <i>
@@ -33,7 +33,7 @@
                      M51.213,401l135.489-135.489L256,325.896l69.298-60.384L460.787,401H51.213z M482,379.788L347.969,245.756L482,128.967V379.788z" />
                                 </svg>
                             </i>
-                            <span>Email: </span><a href="mallto:information@domain.com">&nbsp;info@mujaddadicarefoundation.com</a>
+                            <span>Email: </span><a href="mallto:{{ $settings->email }}">&nbsp;{{ $settings->email }}</a>
                         </div>
                     </div>
                 </div>
@@ -85,10 +85,9 @@
                                         </ul>        
                                         </li>
                                     <li><a href="{{ route('projects.all') }}">Our Work</a></li>
-                                    <li><a href="">Get Involved</a></li>
+                                    <li><a href="{{ route('team') }}">Our Team</a></li>
                                     <li><a href="{{ route('blogs.all') }}">News</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
-                                    {{-- <li><a href="">Donate</a></li> --}}
                                 </ul>
                             </nav>
                             <div class="extras">

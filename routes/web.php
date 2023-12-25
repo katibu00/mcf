@@ -6,6 +6,8 @@ use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -113,3 +115,15 @@ Route::get('projects/{slug}', [ProjectsController::class, 'show'])->name('projec
 Route::get('/projects', [ProjectsController::class, 'allProjects'])->name('projects.all');
 
 Route::get('/events/{slug}',  [EventsController::class, 'show'])->name('events.show');
+
+
+Route::group(['prefix' => 'settings', 'middleware' => ['auth','admin']], function () {
+   
+    Route::get('/admin/settings', [SettingsController::class, 'index'])->name('settings.index');
+    Route::post('/admin/settings/update', [SettingsController::class, 'update'])->name('settings.update');
+
+});
+
+Route::resource('team-members', TeamMemberController::class);
+
+Route::get('/our-team-members', [PagesController::class, 'team'])->name('team');

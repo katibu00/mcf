@@ -60,9 +60,21 @@ $user = auth()->user();
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('team-members.index') }}" class="waves-effect">
+                        <i class="mdi mdi-account-group"></i>
+                        <span>Team Members</span>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('admins.index') }}" class="waves-effect">
-                        <i class="mdi mdi-account"></i> <!-- Changed to account icon for "Users" -->
-                        <span>Users</span>
+                        <i class="mdi mdi-account-tie"></i>
+                        <span>Administrators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('settings.index') }}" class="waves-effect">
+                        <i class="mdi mdi-settings"></i>
+                        <span>Settings</span>
                     </a>
                 </li>
                 
