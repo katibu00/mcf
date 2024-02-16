@@ -19,6 +19,10 @@ class PagesController extends Controller
     {
         return view('frontend.pages.founder');
     }
+    public function mig()
+    {
+        return view('frontend.pages.mig');
+    }
     
     public function team()
     {

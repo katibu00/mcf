@@ -28,12 +28,12 @@
 </head>
 
 <body>
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="sec-loading">
             <div class="one">
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- theme color -->
     <div class="theme-color">
         <img src="/frontend/img/sun.png" alt="moon" id="theme-icon">

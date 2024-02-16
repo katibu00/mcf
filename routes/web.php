@@ -29,6 +29,7 @@ Route::get('/', [HomeController::class, 'guest'])->name('homepage');
 Route::get('/who-we-are', [PagesController::class, 'about'])->name('about');
 Route::get('/contact-us', [PagesController::class, 'contact'])->name('contact');
 Route::get('/our-founder', [PagesController::class, 'founder'])->name('founder');
+Route::get('/migs-7-cross-7', [PagesController::class, 'mig'])->name('migs-7-cross-7');
 
 Route::get('/home', function(){
    

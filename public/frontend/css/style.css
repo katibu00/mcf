@@ -168,13 +168,13 @@ img{
 .no-bottom{
     padding-bottom: 0;
 }
-ul{
+/* ul{
     padding: 0;
     margin: 0;
 }
 li{
     display: block;
-}
+} */
 figure {
     overflow: hidden;
 }
