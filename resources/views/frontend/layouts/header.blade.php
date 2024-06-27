@@ -68,7 +68,7 @@
                     <div class="col-lg-3">
                         <div class="logo">
                             <a href="index.html">
-                                <img alt="logo" src="/frontend/logo.jpeg" width="100px" height="100px" class="white-logo">
+                                <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="white-logo">
                                 <img alt="logo" src="/frontend/logo.jpeg" class="black-logo">
                             </a>
                         </div>
@@ -92,7 +92,7 @@
                                 </ul>
                             </nav>
                             <div class="extras">
-                                <a class="theme-btn" href="#">Volunteer</a>
+                                <a class="theme-btn" href="">Volunteer</a>
                             </div>
                         </div>
                     </div>
