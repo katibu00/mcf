@@ -16,7 +16,7 @@ class ProjectsController extends Controller
 
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::latest()->get();
 
         return view('admin.projects.index', compact('projects'));
     }
@@ -102,7 +102,7 @@ class ProjectsController extends Controller
 
     public function allProjects()
     {
-        $projects = Project::all();
+        $projects = Project::latest()->get();
         return view('frontend.pages.projects', compact('projects'));
     }
 }
