@@ -128,6 +128,7 @@
                 <ul>
                     <li><a href="{{ route('about') }}">Who We Are</a></li>
                     <li><a href="#">Our Founder</a></li>
+                    <li><a href="{{ route('migs-7-cross-7') }}">MIG's 7 Across 7</a></li>
                 </ul>        
                 </li>
             <li><a href="{{ route('projects.all') }}">Our Work</a></li>
