@@ -68,7 +68,7 @@
                     <div class="col-lg-3">
                         <div class="logo">
                             <a href="index.html">
-                                <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="white-logo">
+                                <img alt="logo" src="/frontend/logo.jpeg" width="100px" height="100px" class="white-logo">
                                 <img alt="logo" src="/frontend/logo.jpeg" class="black-logo">
                             </a>
                         </div>
@@ -92,7 +92,7 @@
                                 </ul>
                             </nav>
                             <div class="extras">
-                                <a class="theme-btn" href="">Volunteer</a>
+                                <a class="theme-btn" href="#">Volunteer</a>
                             </div>
                         </div>
                     </div>
@@ -105,8 +105,8 @@
         <div class="container">
             <div class="responsive-bar-slider">
                 <a href="{{ route('homepage') }}">
-                    <img alt="logo" src="/frontend/logo.jpeg" width="50px" height="50px" class="white-logo">
-                    <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="black-logo">
+                    <img alt="logo" src="/frontend/logo.jpeg" width="100px" height="100px" class="white-logo">
+                    <img alt="logo" src="/frontend/logo.jpeg" width="100px" height="100px" class="black-logo">
                 </a>
                 <div class="bar-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -118,8 +118,8 @@
     <div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
         <div class="res-log">
             <a href="{{ route('homepage') }}">
-                <img src="/frontend/logo.jpeg" alt="Responsive Logo" width="70px" height="80px" class="white-logo">
-                <img alt="logo" src="/frontend/logo.jpeg" width="70px" height="80px" class="black-logo">
+                <img src="/frontend/logo.jpeg" alt="Responsive Logo" width="100px" height="100px" class="white-logo">
+                <img alt="logo" src="/frontend/logo.jpeg" width="100px" height="100px" class="black-logo">
             </a>
         </div>
         <ul>
