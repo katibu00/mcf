@@ -123,9 +123,9 @@
                          id="path3106" /></g></g></g></g>
             </svg>
           </i>
-          <h3>Transformative Healthcare</h3>
-          <p> We're committed to improving healthcare access and quality.</p>
-          <a href="#">Read More</a>
+          <h3>IQRA PROGRAM [EDUCATION]</h3>
+          <p>Our goal is to reduce out-of-school children in Bauchi South by providing scholarships, learning materials, and targeted support, especially for girls, to foster community upliftment and ensure no child is left behind.</p>
+          {{-- <a href="#">Read More</a> --}}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12">
@@ -186,9 +186,9 @@
                          id="path1647" /></g></g></g></g>
               </svg>
           </i>
-          <h3> Empowering Education</h3>
-          <p>Education is the key to a brighter future. </p>
-          <a href="#">Read More</a>
+          <h3> HEALTH CARE IMPROVEMENT</h3>
+          <p>Enhance community health and well-being by providing accessible healthcare services through medical outreach programs. </p>
+          {{-- <a href="#">Read More</a> --}}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12">
@@ -247,9 +247,9 @@
                        id="path49" /></g></g></g>
           </svg>
           </i>
-          <h3>Compassionate Care</h3>
-          <p>We believe in building a compassionate society.</p>
-          <a href="cause-details.html">Read More</a>
+          <h3>HUMANITARIAN AID INITIATIVE</h3>
+          <p>Focuses on care, compassion, and social justice, addressing diverse needs to foster equality and resilience.</p>
+          {{-- <a href="cause-details.html">Read More</a> --}}
         </div>
       </div>
     </div>
